@@ -1,3 +1,4 @@
+// Portfolio by Sri Harsha - Updated with fixed image paths
 "use client"
 
 import { useState, useEffect } from "react"
