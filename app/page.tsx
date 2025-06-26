@@ -83,48 +83,48 @@ export default function Portfolio() {
       description:
         "Complete branding solution for businesses, startups, and marketing agencies. Perfect for creating product launches, social media campaigns, email marketing, and brand identity materials. Simply enter your campaign details and get professional advertisement copy, social media posts, email campaigns, product descriptions, and visual assets - all generated with AI in one click. Ideal for small businesses without marketing teams, freelancers, and anyone needing quick, professional branding materials.",
       tags: ["Python", "AI", "GPT-4", "GPT Image 1", "Branding", "FastAPI", "Gradio"],
-      image: "/brandkit/brandkit_visual_8.png",
+      image: "/Brandkit/brandkit_visual_8.png",
       color: "cyan",
       link: "https://github.com/sri8harsha/Brandkit",
       github: "https://github.com/sri8harsha/Brandkit",
       demo: [
         {
-          image: "/brandkit/UI1.jpg",
+          image: "/Brandkit/UI1.jpg",
           title: "Simple Interface",
           description: "Clean and easy-to-use dashboard. Navigate through different sections to create your brand campaigns without any complexity."
         },
         {
-          image: "/brandkit/UI2.jpg",
+          image: "/Brandkit/UI2.jpg",
           title: "Ready to Use",
           description: "Simple layout that works on any device. Everything is organized and ready for you to start creating your brand materials."
         },
         {
-          image: "/brandkit/Details.jpg",
+          image: "/Brandkit/Details.jpg",
           title: "Step 1: Enter Your Details",
           description: "Fill in your campaign details here - product name, target audience, goals, and any specific requirements. Then click 'Generate' to create all your branding materials instantly."
         },
         {
-          image: "/brandkit/AC.jpg",
+          image: "/Brandkit/AC.jpg",
           title: "Get Advertisement Copy",
           description: "Receive professional ad copy ready to use for your campaigns. Perfect for Google Ads, Facebook Ads, or any marketing materials."
         },
         {
-          image: "/brandkit/Product.jpg",
+          image: "/Brandkit/Product.jpg",
           title: "Product Descriptions & Taglines",
           description: "Get catchy taglines and detailed product descriptions that sell. Use these for your website, product pages, or marketing brochures."
         },
         {
-          image: "/brandkit/SM.jpg",
+          image: "/Brandkit/SM.jpg",
           title: "Social Media Posts",
           description: "Ready-to-post social media content with hashtags. Perfect for Instagram, LinkedIn, Twitter, and Facebook to promote your brand."
         },
         {
-          image: "/brandkit/Email.jpg",
+          image: "/Brandkit/Email.jpg",
           title: "Email Campaigns",
           description: "Professional email templates for your marketing campaigns. Ready to send to your customers with engaging subject lines and content."
         },
         {
-          image: "/brandkit/brandkit_visual_8.png",
+          image: "/Brandkit/brandkit_visual_8.png",
           title: "Visual Brand Assets",
           description: "AI-generated posters and visual content using GPT Image 1. Get professional-looking graphics that match your brand and campaign."
         }
