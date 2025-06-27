@@ -775,14 +775,26 @@ export default function Portfolio() {
               Let's Create Together
             </h2>
             <p className="text-xl text-slate-600">Ready to bring your AI vision to life?</p>
-            <div className="mt-8 p-6 bg-white/60 rounded-2xl border border-emerald-200">
-              <div className="flex items-center justify-center gap-3 text-emerald-700">
-                <Mail className="w-5 h-5" />
-                <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium hover:text-emerald-800 transition-colors">
-                  sri0harsha@gmail.com
-                </a>
+            <div className="mt-8 space-y-4">
+              <div className="p-6 bg-white/60 rounded-2xl border border-emerald-200">
+                <div className="flex items-center justify-center gap-3 text-emerald-700">
+                  <Mail className="w-5 h-5" />
+                  <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium hover:text-emerald-800 transition-colors">
+                    sri0harsha@gmail.com
+                  </a>
+                </div>
+                <p className="text-sm text-slate-600 text-center mt-2">Email for direct communication</p>
               </div>
-              <p className="text-sm text-slate-600 text-center mt-2">Available for projects, collaborations, and consultations</p>
+              
+              <div className="p-6 bg-white/60 rounded-2xl border border-blue-200">
+                <div className="flex items-center justify-center gap-3 text-blue-700">
+                  <Linkedin className="w-5 h-5" />
+                  <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:text-blue-800 transition-colors">
+                    Connect on LinkedIn
+                  </a>
+                </div>
+                <p className="text-sm text-slate-600 text-center mt-2">Available for projects, collaborations, and consultations</p>
+              </div>
             </div>
           </motion.div>
 
@@ -840,7 +852,9 @@ export default function Portfolio() {
           >
             <div className="flex justify-center gap-6 mb-6">
               <motion.a
-                href="#"
+                href="https://linkedin.com/in/sri-harsha-3b0401170"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-emerald-50 hover:bg-emerald-100 rounded-full transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
@@ -848,7 +862,9 @@ export default function Portfolio() {
                 <Linkedin className="w-6 h-6 text-emerald-600" />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://github.com/sri8harsha"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-slate-50 hover:bg-slate-100 rounded-full transition-all duration-300"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
