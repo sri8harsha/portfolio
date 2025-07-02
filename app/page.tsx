@@ -41,24 +41,34 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Product Photography Automation",
-      description: `An end-to-end AI workflow that automates product photography for e-commerce.\n\n- **Tech Stack:** n8n (workflow automation), GPT-4 Vision (image analysis), OpenAI DALL-E (image generation), Google Sheets & Drive (data and asset management), custom Node.js scripts for API integration.\n- **Features:**\n  • Batch processes product images from Google Drive\n  • Uses GPT-4 Vision to analyze product type and context\n  • Generates 1536x1024 photorealistic images with human models using DALL-E\n  • Automatically updates Google Sheets with image links and metadata\n  • Sends Slack/Email notifications on completion\n- **Impact:** Reduced product photography costs by 80%, automated 100+ hours/month, and improved marketing asset quality.`,
-      tags: [
+      title: "AI Product Photography Pipeline",
+      subtitle: "Automated e-commerce photo generation using AI vision and workflow orchestration",
+      description: "Production-ready automation system that transforms basic product images into professional e-commerce photography with human models. Built as a scalable n8n workflow processing hundreds of images daily.",
+      technical: [
+        "n8n workflow orchestration with Google Sheets integration",
+        "GPT-4 Vision for intelligent product analysis and categorization",
+        "OpenAI DALL-E 3 for high-quality image generation (1536x1024)",
+        "Automated Google Drive storage with organized folder structure",
+        "Batch processing with error handling and retry logic"
+      ],
+      business: [
+        "Reduces photography costs by 85% ($200 → $30 per product shoot)",
+        "Processes 50+ products in 30 minutes vs 2-3 days traditional method",
+        "Consistent brand aesthetic across entire product catalog",
+        "Currently processing 500+ images/month for 3 e-commerce clients"
+      ],
+      stack: [
         "n8n",
-        "GPT-4 Vision",
-        "OpenAI DALL-E",
+        "OpenAI API",
+        "Google Workspace APIs",
         "Node.js",
-        "Google Apps Script",
-        "Google Sheets API",
-        "Google Drive API",
-        "Workflow Automation",
-        "Slack API",
-        "REST API Integration"
+        "REST APIs"
       ],
       image: "/photoshoot/airpods_input.png",
       color: "amber",
       link: "https://your-demo-link.com", // Replace with actual demo link
       github: "https://github.com/sri8harsha/product-photoshoot",
+      caseStudy: "https://your-case-study-link.com", // Replace with actual case study link
       showcase: [
         {
           label: "AirPods",
@@ -208,85 +218,36 @@ export default function Portfolio() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative px-6">
-        <motion.div
-          className="text-center z-10 max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.div
-            className="mb-8"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
-              SRI HARSHA
-            </h1>
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-              KOLUKULURI
-            </h2>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mb-12"
-          >
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <motion.div
-                animate={{ rotate: [0, 360] }}
-                transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-              >
-                <Brain className="w-8 h-8 text-emerald-500" />
-              </motion.div>
-              <p className="text-2xl md:text-3xl text-slate-700 font-light">AI Automation Engineer</p>
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-              >
-                <Sparkles className="w-8 h-8 text-amber-500" />
-              </motion.div>
+      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative px-6 bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 text-slate-800">
+        <div className="text-center z-10 max-w-4xl mx-auto">
+          <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
+            SRI HARSHA KOLUKULURI
+          </h1>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+            AI Automation Engineer & Workflow Specialist
+          </h2>
+          <p className="text-xl text-slate-700 max-w-2xl mx-auto mb-6">
+            I architect intelligent automation systems that eliminate manual work and scale business operations. Specialized in n8n workflows, AI API integrations, and production-ready solutions that deliver measurable ROI.
+          </p>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
+            Currently building AI-powered automation for businesses across e-commerce, marketing, and document processing.
+          </p>
+          {/* Metrics Bar */}
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
+            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
+              <span role="img" aria-label="rocket">🚀</span> 15+ Production Workflows Deployed
             </div>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              I build AI automations that actually work in production. Specialized in n8n workflows, API integrations, and turning manual business processes into intelligent systems. My focus: making AI accessible through practical tools that deliver measurable ROI.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center"
-          >
-            <motion.button
-              onClick={() => scrollToSection("projects")}
-              className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl font-semibold text-lg shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Explore Projects
-            </motion.button>
-            <motion.button
-              onClick={() => scrollToSection("contact")}
-              className="px-8 py-4 border-2 border-emerald-500 text-emerald-600 rounded-2xl font-semibold text-lg hover:bg-emerald-50 transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Let's Connect
-            </motion.button>
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-        >
-          <ChevronDown className="w-8 h-8 text-emerald-400" />
-        </motion.div>
+            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
+              <span role="img" aria-label="lightning">⚡</span> 200+ Hours Monthly Manual Work Eliminated
+            </div>
+            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
+              <span role="img" aria-label="chart">📈</span> 75% Average Task Time Reduction
+            </div>
+            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
+              <span role="img" aria-label="money">💰</span> $50K+ Annual Savings Generated for Clients
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Projects Section */}
@@ -357,7 +318,7 @@ export default function Portfolio() {
                       <img src={project.image} alt={project.title} className="w-full h-64 object-contain rounded-xl border border-emerald-100 bg-white shadow mb-4 cursor-pointer" onClick={() => openGallery([{ src: project.image, title: project.title }], 0)} />
                     )}
                     <div className="flex flex-wrap gap-2 mt-6">
-                      {project.tags.map((tag, tagIndex) => (
+                      {project.stack.map((tag, tagIndex) => (
                         <span key={tagIndex} className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium">
                           {tag}
                         </span>
@@ -736,7 +697,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           </h3>
           <p className="text-slate-600 mb-4 leading-relaxed flex-1">{project.description}</p>
           <div className="flex flex-wrap gap-2 mt-auto">
-            {project.tags.map((tag, tagIndex) => (
+            {project.stack.map((tag, tagIndex) => (
               <motion.span
                 key={tagIndex}
                 className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium"
