@@ -397,7 +397,7 @@ export default function Portfolio() {
             AI Automation Engineer & Workflow Specialist
           </h2>
           <p className="text-xl text-slate-700 max-w-2xl mx-auto mb-6">
-            I architect intelligent automation systems that eliminate manual work and scale business operations. Specialized in n8n workflows, AI API integrations, and production-ready solutions that deliver measurable ROI.
+            I architect intelligent automation systems that eliminate manual work and scale business operations. Specialized in automating workflows, AI API integrations, and production-ready solutions that deliver measurable ROI.
           </p>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
             Currently building AI-powered automation for businesses across e-commerce, marketing, and document processing.
