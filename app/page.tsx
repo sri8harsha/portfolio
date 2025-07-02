@@ -128,19 +128,44 @@ export default function Portfolio() {
       caseStudy: "https://your-marketing-case-study-link.com",
       showcase: [
         {
-          label: "UI Demo",
-          input: "/Brandkit/UI1.jpg",
-          outputs: ["/Brandkit/UI2.jpg", "/Brandkit/Details.jpg"]
+          title: "Simple Interface",
+          description: "Clean and easy-to-use dashboard. Navigate through different sections to create your brand campaigns without any complexity.",
+          image: "/Brandkit/UI1.jpg"
         },
         {
-          label: "Social Media Asset",
-          input: "/Brandkit/SM.jpg",
-          outputs: ["/Brandkit/AC.jpg"]
+          title: "Ready to Use",
+          description: "Simple layout that works on any device. Everything is organized and ready for you to start creating your brand materials.",
+          image: "/Brandkit/UI2.jpg"
         },
         {
-          label: "Email Campaign",
-          input: "/Brandkit/Email.jpg",
-          outputs: ["/Brandkit/brandkit_visual_8.png"]
+          title: "Step 1: Enter Your Details",
+          description: "Fill in your campaign details here - product name, target audience, goals, and any specific requirements. Then click 'Generate' to create all your branding materials instantly.",
+          image: "/Brandkit/Details.jpg"
+        },
+        {
+          title: "Get Advertisement Copy",
+          description: "Receive professional ad copy ready to use for your campaigns. Perfect for Google Ads, Facebook Ads, or any marketing materials.",
+          image: "/Brandkit/AC.jpg"
+        },
+        {
+          title: "Product Descriptions & Taglines",
+          description: "Get catchy taglines and detailed product descriptions that sell. Use these for your website, product pages, or marketing brochures.",
+          image: "/Brandkit/Product.jpg"
+        },
+        {
+          title: "Social Media Posts",
+          description: "Ready-to-post social media content with hashtags. Perfect for Instagram, LinkedIn, Twitter, and Facebook to promote your brand.",
+          image: "/Brandkit/SM.jpg"
+        },
+        {
+          title: "Email Campaigns",
+          description: "Professional email templates for your marketing campaigns. Ready to send to your customers with engaging subject lines and content.",
+          image: "/Brandkit/Email.jpg"
+        },
+        {
+          title: "Visual Brand Assets",
+          description: "AI-generated posters and visual content using GPT Image 1. Get professional-looking graphics that match your brand and campaign.",
+          image: "/Brandkit/brandkit_visual_8.png"
         }
       ]
     },
@@ -178,14 +203,29 @@ export default function Portfolio() {
       caseStudy: "https://your-docs-case-study-link.com",
       showcase: [
         {
-          label: "Interface",
-          input: "/document-assistant/demo1.jpg",
-          outputs: ["/document-assistant/demo2.jpg", "/document-assistant/demo3.jpg"]
+          title: "Intuitive User Interface",
+          description: "Clean and modern Gradio-based interface designed for seamless user experience. The dashboard provides easy access to all document processing features with an intuitive layout that makes AI-powered document analysis accessible to everyone.",
+          image: "/document-assistant/demo1.jpg"
         },
         {
-          label: "AI Processing",
-          input: "/document-assistant/demo4.jpg",
-          outputs: ["/document-assistant/demo5.jpg"]
+          title: "PDF Document Upload",
+          description: "Effortlessly upload PDF documents through the drag-and-drop interface. The system supports various document formats and automatically prepares files for AI processing with built-in validation and optimization.",
+          image: "/document-assistant/demo2.jpg"
+        },
+        {
+          title: "AI Document Processing & Summary",
+          description: "Click 'Process Document' to activate advanced LLM analysis. The AI extracts key information, generates comprehensive summaries, and structures the content for intelligent querying - all powered by state-of-the-art language models.",
+          image: "/document-assistant/demo3.jpg"
+        },
+        {
+          title: "Natural Language Queries",
+          description: "Ask questions about your document using natural language. The intelligent chatbot interface allows you to query specific information, request clarifications, or explore document contents through conversational AI.",
+          image: "/document-assistant/demo4.jpg"
+        },
+        {
+          title: "Intelligent AI Responses",
+          description: "Receive accurate, context-aware answers powered by LLM technology. The AI provides detailed responses, cites relevant document sections, and offers insights that help you understand and utilize your documents more effectively.",
+          image: "/document-assistant/demo5.jpg"
         }
       ]
     },
@@ -428,7 +468,25 @@ export default function Portfolio() {
                         {project.description}
                       </DialogDescription>
                     </DialogHeader>
-                    {project.showcase && (
+                    {(project.title === "Multi-Channel Marketing Content Generator" || project.title === "Enterprise Document Intelligence System") && project.showcase && (
+                      <div className="space-y-8 mt-8">
+                        {project.showcase.map((item, i) => (
+                          <div key={i} className="flex flex-col md:flex-row gap-6 items-start">
+                            <div className="flex-shrink-0 border-2 border-emerald-200 rounded-xl p-2 bg-white shadow-md">
+                              <img src={item.image} alt={item.title} className="w-48 h-32 object-cover rounded-xl" />
+                            </div>
+                            <div className="flex-1 space-y-2">
+                              <div className="flex items-center gap-3">
+                                <span className="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-white font-semibold text-sm">{i + 1}</span>
+                                <h4 className="text-lg font-semibold text-emerald-700">{item.title}</h4>
+                              </div>
+                              <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {!(project.title === "Multi-Channel Marketing Content Generator" || project.title === "Enterprise Document Intelligence System") && project.showcase && (
                       <div className="space-y-12 mt-8">
                         {project.showcase.map((item, i) => (
                           <div key={i}>
