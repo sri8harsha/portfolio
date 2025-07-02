@@ -443,58 +443,55 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6 relative">
+      <section id="about" className="py-20 px-6 relative bg-white/50">
         <div className="max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">About Me</h2>
-            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
-              Started as a data analyst who got tired of watching teams do the same manual tasks every day. Now I specialize in building AI workflows that actually get deployed and used.<br/><br/>
-              My approach: understand the business problem first, then build the most elegant technical solution. I work primarily with n8n for workflow automation, integrating various AI APIs to create end-to-end systems that non-technical teams can operate.<br/><br/>
-              Most of my projects save companies 10-20 hours per week of manual work while improving output quality.
-            </p>
-          </motion.div>
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Engineering AI Solutions That Actually Work in Production</h2>
+          <div className="text-lg text-slate-700 mb-6 font-semibold">BACKGROUND & EXPERTISE</div>
+          <p className="text-lg text-slate-700 mb-6">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical—it's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
+          <div className="text-lg text-slate-700 mb-6 font-semibold">TECHNICAL PHILOSOPHY</div>
+          <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
+            <li>Reliability First: Systems must work consistently, even with unexpected inputs</li>
+            <li>User-Centric Design: Non-technical teams should operate complex AI workflows effortlessly</li>
+            <li>Measurable Impact: Every implementation includes clear metrics and ROI tracking</li>
+          </ul>
+          <div className="text-lg text-slate-700 mb-6 font-semibold">CURRENT FOCUS AREAS</div>
+          <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
+            <li>Workflow Automation Architecture: Building enterprise-grade n8n workflows with proper error handling, monitoring, and scalability</li>
+            <li>AI API Integration & Optimization: Combining multiple AI models (GPT-4, Claude, specialized APIs) for optimal cost and performance</li>
+            <li>Business Process Intelligence: Analyzing manual workflows to identify automation opportunities with highest ROI</li>
+            <li>Production Deployment & Monitoring: Ensuring AI systems run reliably in production with proper logging and alerts</li>
+          </ul>
+          <div className="text-lg text-slate-700 mb-6 font-semibold">COLLABORATION APPROACH</div>
+          <p className="text-lg text-slate-700">I work closely with business stakeholders to understand real operational challenges, then design technical solutions that integrate naturally into existing workflows. My goal isn't just to build impressive technology—it's to create systems that teams actually use and depend on daily.</p>
         </div>
       </section>
 
       {/* Skills Section */}
       <section id="skills" className="py-20 px-6 relative">
         <div className="max-w-5xl mx-auto">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Skills</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Technical Expertise & Production Experience</h2>
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Workflow Automation</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
-                <li>n8n (Advanced) - 15+ production workflows</li>
-                <li>Zapier, Make.com - Enterprise integrations</li>
+              <h3 className="text-2xl font-semibold mb-4">AI & Machine Learning Integration</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
+                <li>Large Language Models: OpenAI GPT-4, GPT-4V (Vision), GPT-3.5 Turbo, Anthropic Claude 3.5 Sonnet, Claude 3 Haiku, Groq LLaMA</li>
+                <li>Computer Vision & Generation: OpenAI DALL-E 3, Stable Diffusion XL, GPT-4 Vision, ComfyUI workflows</li>
+                <li>Vector Search & RAG: Pinecone, Chroma, FAISS, OpenAI text-embedding-ada-002, sentence-transformers</li>
               </ul>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">API Design & Integration</h3>
+              <h3 className="text-2xl font-semibold mb-4">Workflow Automation & Integration</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
+                <li>n8n (Advanced) <div className="w-full bg-emerald-100 rounded h-2 mt-1 mb-2"><div className="bg-emerald-500 h-2 rounded" style={{width: '80%'}}></div></div></li>
+                <li>Zapier, Make.com, Custom Webhooks, API Orchestration</li>
+                <li>RESTful API design, OAuth 2.0, 50+ third-party integrations</li>
+              </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">AI Integration</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
-                <li>OpenAI APIs (GPT-4, DALL-E, Whisper)</li>
-                <li>Claude API, Groq API</li>
-                <li>Prompt engineering & optimization</li>
-              </ul>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Development Stack</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
-                <li>Python (automation scripts, API backends)</li>
-                <li>JavaScript/Node.js (custom n8n nodes)</li>
-                <li>Google Apps Script (Sheets/Drive automation)</li>
-              </ul>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Business Systems</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
-                <li>Google Workspace automation</li>
-                <li>CRM integrations (HubSpot, Salesforce)</li>
-                <li>Database design & management</li>
+              <h3 className="text-2xl font-semibold mb-4">Development Stack</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
+                <li>Backend: Python (FastAPI, Flask, Django), Node.js (Express, NestJS), Serverless (Vercel, Netlify)</li>
+                <li>Frontend: React, Next.js, Gradio, Streamlit, Bubble.io, Webflow</li>
+                <li>Cloud & Databases: GCP, AWS, MongoDB, PostgreSQL, Redis, Pinecone</li>
+                <li>DevOps: Git, CI/CD, Docker, Monitoring, Performance Optimization</li>
               </ul>
             </div>
           </div>
@@ -504,96 +501,65 @@ export default function Portfolio() {
       {/* Results/Metrics Section */}
       <section id="results" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="mb-16">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Results & Metrics</h2>
-            <ul className="list-disc list-inside text-xl text-slate-700 mx-auto max-w-2xl">
-              <li>Automated 200+ hours of monthly manual work across 5 companies</li>
-              <li>Reduced average task completion time by 75%</li>
-              <li>Deployed 15+ AI workflows currently running in production</li>
-            </ul>
-          </motion.div>
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Measurable Business Impact</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl shadow p-6">
+              <h3 className="text-xl font-bold mb-2 text-emerald-700">E-commerce Automation Client</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Reduced product photography costs by 85 percent ($24K annual savings)</li>
+                <li>Increased catalog update frequency from monthly to daily</li>
+                <li>Improved conversion rates by 23 percent with consistent product imagery</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl shadow p-6">
+              <h3 className="text-xl font-bold mb-2 text-emerald-700">Marketing Agency Partnership</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Decreased campaign development time by 90 percent (5 days to 4 hours)</li>
+                <li>Enabled 3x client capacity without additional staff</li>
+                <li>Generated $180K additional annual revenue through efficiency gains</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl shadow p-6">
+              <h3 className="text-xl font-bold mb-2 text-emerald-700">Legal Firm Document Processing</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Reduced contract review time by 70 percent (8 hours to 2.4 hours)</li>
+                <li>Improved accuracy in key clause identification by 95 percent</li>
+                <li>Processed 2,000 plus documents with zero security incidents</li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl shadow p-6">
+              <h3 className="text-xl font-bold mb-2 text-emerald-700">Manufacturing Process Optimization</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Automated inventory reporting saving 15 hours per week</li>
+                <li>Eliminated manual data entry errors (100 percent to 0 percent)</li>
+                <li>Reduced supplier communication cycle from 3 days to 2 hours</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
-        <div className="max-w-2xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Let's Create Together
-            </h2>
-            <p className="text-xl text-slate-600">Ready to bring your AI vision to life?</p>
-            <div className="mt-8 space-y-4">
-              <div className="p-6 bg-white/60 rounded-2xl border border-emerald-200">
-                <div className="flex items-center justify-center gap-3 text-emerald-700">
-                  <Mail className="w-5 h-5" />
-                  <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium hover:text-emerald-800 transition-colors">
-                    sri0harsha@gmail.com
-                  </a>
-                </div>
-                <p className="text-sm text-slate-600 text-center mt-2">Email for direct communication</p>
-                <div className="mt-4">
-                  <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-semibold shadow hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">Book a Consultation</a>
-                </div>
-              </div>
-              
-              <div className="p-6 bg-white/60 rounded-2xl border border-blue-200">
-                <div className="flex items-center justify-center gap-3 text-blue-700">
-                  <Linkedin className="w-5 h-5" />
-                  <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium hover:text-blue-800 transition-colors">
-                    Connect on LinkedIn
-                  </a>
-                </div>
-                <p className="text-sm text-slate-600 text-center mt-2">Available for projects, collaborations, and consultations</p>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-emerald-100 shadow-xl"
-          >
-            <form className="space-y-6">
-              <div>
-                <Input
-                  placeholder="Your Name"
-                  className="bg-white/50 border-emerald-200 text-slate-800 placeholder:text-slate-500 focus:border-emerald-400 transition-colors duration-300 h-12 rounded-xl"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  className="bg-white/50 border-emerald-200 text-slate-800 placeholder:text-slate-500 focus:border-emerald-400 transition-colors duration-300 h-12 rounded-xl"
-                />
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Tell me about your project..."
-                  rows={5}
-                  className="bg-white/50 border-emerald-200 text-slate-800 placeholder:text-slate-500 focus:border-emerald-400 transition-colors duration-300 resize-none rounded-xl"
-                />
-              </div>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
-                >
-                  <Mail className="w-5 h-5 mr-2" />
-                  Send Message
-                </Button>
-              </motion.div>
-            </form>
-          </motion.div>
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Let's Build Something Amazing Together</h2>
+          <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">📧 Email: sri0harsha@gmail.com</a>
+            <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">📅 Schedule Consultation</a>
+            <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">💼 LinkedIn</a>
+            <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">🔗 GitHub</a>
+          </div>
+          <div className="bg-white rounded-2xl shadow p-6 text-left mx-auto max-w-xl">
+            <div className="font-semibold text-lg mb-2">Consultation Approach:</div>
+            <ul className="list-disc list-inside text-lg text-slate-700 mb-2">
+              <li>Free 30-minute process analysis and automation assessment</li>
+              <li>Custom workflow demonstration with your actual data</li>
+              <li>Detailed implementation roadmap with timeline and ROI projections</li>
+              <li>Ongoing support and optimization for deployed systems</li>
+            </ul>
+            <div className="text-slate-700 mt-2">Available for: Process automation consulting, AI integration projects, workflow optimization, and technical advisory roles.</div>
+          </div>
         </div>
       </section>
 
