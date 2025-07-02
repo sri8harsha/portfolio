@@ -330,19 +330,27 @@ export default function Portfolio() {
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
             Currently building AI-powered automation for businesses across e-commerce, marketing, and document processing.
           </p>
-          {/* Metrics Bar */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
-            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
-              <span role="img" aria-label="rocket">🚀</span> 15+ Production Workflows Deployed
+          {/* HERO METRICS BAR (replace metrics bar with interactive cards) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
+              <span className="text-4xl mb-2">🚀</span>
+              <span className="text-2xl font-bold text-emerald-700">15+</span>
+              <span className="text-base text-slate-600 mt-1">Workflows Deployed</span>
             </div>
-            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
-              <span role="img" aria-label="lightning">⚡</span> 200+ Hours Monthly Manual Work Eliminated
+            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
+              <span className="text-4xl mb-2">⚡</span>
+              <span className="text-2xl font-bold text-emerald-700">200+</span>
+              <span className="text-base text-slate-600 mt-1">Hours Saved/Month</span>
             </div>
-            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
-              <span role="img" aria-label="chart">📈</span> 75% Average Task Time Reduction
+            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
+              <span className="text-4xl mb-2">📈</span>
+              <span className="text-2xl font-bold text-emerald-700">75%</span>
+              <span className="text-base text-slate-600 mt-1">Task Time Reduction</span>
             </div>
-            <div className="flex items-center gap-2 bg-emerald-100 px-6 py-3 rounded-xl shadow text-emerald-700 font-semibold text-lg">
-              <span role="img" aria-label="money">💰</span> $50K+ Annual Savings Generated for Clients
+            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
+              <span className="text-4xl mb-2">💰</span>
+              <span className="text-2xl font-bold text-emerald-700">$50K+</span>
+              <span className="text-base text-slate-600 mt-1">Annual Savings</span>
             </div>
           </div>
         </div>
@@ -488,7 +496,12 @@ export default function Portfolio() {
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold mb-2">Workflow Automation & Integration</h3>
                   <ul className="list-disc list-inside text-base text-slate-700 mb-4">
-                    <li>n8n (Advanced) <div className="w-full bg-emerald-100 rounded h-2 mt-1 mb-2"><div className="bg-emerald-500 h-2 rounded" style={{width: '80%'}}></div></div></li>
+                    <li className="flex items-center justify-between">n8n (Advanced)
+                      <div className="flex items-center gap-2 ml-2">
+                        <img src="/badges/n8n.svg" alt="n8n" className="w-6 h-6" />
+                        <div className="w-32 bg-emerald-100 rounded h-2 ml-2"><div className="bg-emerald-500 h-2 rounded transition-all duration-700" style={{width: '80%'}}></div></div>
+                      </div>
+                    </li>
                     <li>Zapier, Make.com, Custom Webhooks, API Orchestration</li>
                     <li>RESTful API design, OAuth 2.0, 50+ third-party integrations</li>
                   </ul>
@@ -555,7 +568,7 @@ export default function Portfolio() {
           <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Let's Build Something Amazing Together</h2>
           <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
           <div className="flex flex-col items-center gap-4 mb-8">
-            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">📧 Email: sri0harsha@gmail.com</a>
+            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-emerald-700 hover:text-white hover:bg-emerald-500 transition-all duration-300 px-4 py-2 rounded-xl shadow inline-flex items-center gap-2"><Mail className="w-5 h-5" /> Email: sri0harsha@gmail.com</a>
             <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">📅 Schedule Consultation</a>
             <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">💼 LinkedIn</a>
             <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">🔗 GitHub</a>
@@ -730,7 +743,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
       whileHover={{ y: -10 }}
       className="group"
     >
-      <Card className="bg-white/80 backdrop-blur-sm border-emerald-100 overflow-hidden hover:shadow-xl transition-all duration-500 h-full">
+      <Card className="bg-white/80 backdrop-blur-sm border-emerald-100 overflow-hidden hover:shadow-emerald-200 hover:scale-105 transition-all duration-500 h-full">
         <div className="relative overflow-hidden">
           <img
             src={project.image || "/placeholder.svg"}
@@ -772,13 +785,14 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
           <p className="text-slate-600 mb-4 leading-relaxed flex-1">{project.description}</p>
           <div className="flex flex-wrap gap-2 mt-auto">
             {project.stack.map((tag, tagIndex) => (
-              <motion.span
+              <span
                 key={tagIndex}
-                className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium"
+                className="flex items-center gap-1 px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium"
                 whileHover={{ scale: 1.05 }}
               >
+                <img src={`/badges/${tag.toLowerCase().replace(/ /g, '-')}.svg`} alt={tag} className="w-5 h-5" />
                 {tag}
-              </motion.span>
+              </span>
             ))}
           </div>
         </CardContent>
