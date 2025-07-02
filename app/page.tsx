@@ -39,17 +39,25 @@ export default function Portfolio() {
   const [galleryImages, setGalleryImages] = useState([])
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-
-
   const projects = [
     {
-      title: "Product Photoshoot",
-      description:
-        "An automated workflow that transforms product images into professional product photography using AI. This project demonstrates before-and-after results for various products, showcasing the power of automated image enhancement and human model integration. [View on GitHub](https://github.com/sri8harsha/product-photoshoot)",
-      tags: ["AI", "Automation", "Image Processing", "n8n", "OpenAI", "Google Sheets"],
+      title: "Product Photography Automation",
+      description: `An end-to-end AI workflow that automates product photography for e-commerce.\n\n- **Tech Stack:** n8n (workflow automation), GPT-4 Vision (image analysis), OpenAI DALL-E (image generation), Google Sheets & Drive (data and asset management), custom Node.js scripts for API integration.\n- **Features:**\n  • Batch processes product images from Google Drive\n  • Uses GPT-4 Vision to analyze product type and context\n  • Generates 1536x1024 photorealistic images with human models using DALL-E\n  • Automatically updates Google Sheets with image links and metadata\n  • Sends Slack/Email notifications on completion\n- **Impact:** Reduced product photography costs by 80%, automated 100+ hours/month, and improved marketing asset quality.`,
+      tags: [
+        "n8n",
+        "GPT-4 Vision",
+        "OpenAI DALL-E",
+        "Node.js",
+        "Google Apps Script",
+        "Google Sheets API",
+        "Google Drive API",
+        "Workflow Automation",
+        "Slack API",
+        "REST API Integration"
+      ],
       image: "/photoshoot/airpods_input.png",
       color: "amber",
-      link: "https://github.com/sri8harsha/product-photoshoot",
+      link: "https://your-demo-link.com", // Replace with actual demo link
       github: "https://github.com/sri8harsha/product-photoshoot",
       showcase: [
         {
@@ -78,105 +86,6 @@ export default function Portfolio() {
           ]
         }
       ]
-    },
-    {
-      title: "Brandkit",
-      description:
-        "Complete branding solution for businesses, startups, and marketing agencies. Perfect for creating product launches, social media campaigns, email marketing, and brand identity materials. Simply enter your campaign details and get professional advertisement copy, social media posts, email campaigns, product descriptions, and visual assets - all generated with AI in one click. Ideal for small businesses without marketing teams, freelancers, and anyone needing quick, professional branding materials.",
-      tags: ["Python", "AI", "GPT-4", "GPT Image 1", "Branding", "FastAPI", "Gradio"],
-      image: "/Brandkit/brandkit_visual_8.png",
-      color: "cyan",
-      link: "https://github.com/sri8harsha/Brandkit",
-      github: "https://github.com/sri8harsha/Brandkit",
-      demo: [
-        {
-          image: "/Brandkit/UI1.jpg",
-          title: "Simple Interface",
-          description: "Clean and easy-to-use dashboard. Navigate through different sections to create your brand campaigns without any complexity."
-        },
-        {
-          image: "/Brandkit/UI2.jpg",
-          title: "Ready to Use",
-          description: "Simple layout that works on any device. Everything is organized and ready for you to start creating your brand materials."
-        },
-        {
-          image: "/Brandkit/Details.jpg",
-          title: "Step 1: Enter Your Details",
-          description: "Fill in your campaign details here - product name, target audience, goals, and any specific requirements. Then click 'Generate' to create all your branding materials instantly."
-        },
-        {
-          image: "/Brandkit/AC.jpg",
-          title: "Get Advertisement Copy",
-          description: "Receive professional ad copy ready to use for your campaigns. Perfect for Google Ads, Facebook Ads, or any marketing materials."
-        },
-        {
-          image: "/Brandkit/Product.jpg",
-          title: "Product Descriptions & Taglines",
-          description: "Get catchy taglines and detailed product descriptions that sell. Use these for your website, product pages, or marketing brochures."
-        },
-        {
-          image: "/Brandkit/SM.jpg",
-          title: "Social Media Posts",
-          description: "Ready-to-post social media content with hashtags. Perfect for Instagram, LinkedIn, Twitter, and Facebook to promote your brand."
-        },
-        {
-          image: "/Brandkit/Email.jpg",
-          title: "Email Campaigns",
-          description: "Professional email templates for your marketing campaigns. Ready to send to your customers with engaging subject lines and content."
-        },
-        {
-          image: "/Brandkit/brandkit_visual_8.png",
-          title: "Visual Brand Assets",
-          description: "AI-generated posters and visual content using GPT Image 1. Get professional-looking graphics that match your brand and campaign."
-        }
-      ]
-    },
-    {
-      title: "LLM-Powered Document Assistant",
-      description:
-        "An AI-powered document processing application that enables users to upload PDF documents and interact with them through a natural language chat interface. Built with Python and modern AI frameworks, this tool provides intelligent document summarization, fast PDF processing, and real-time AI-powered insights using LLMs. Features a clean, intuitive UI built with Gradio for seamless user experience.",
-      tags: ["Python", "LLM", "AI", "Document Processing", "Gradio", "LangChain"],
-      image: "/document-assistant/demo1.jpg",
-      color: "emerald",
-      link: "https://github.com/sri8harsha/Document-Assistant",
-      github: "https://github.com/sri8harsha/Document-Assistant",
-      demo: [
-        {
-          image: "/document-assistant/demo1.jpg",
-          title: "Intuitive User Interface",
-          description: "Clean and modern Gradio-based interface designed for seamless user experience. The dashboard provides easy access to all document processing features with an intuitive layout that makes AI-powered document analysis accessible to everyone."
-        },
-        {
-          image: "/document-assistant/demo2.jpg",
-          title: "PDF Document Upload",
-          description: "Effortlessly upload PDF documents through the drag-and-drop interface. The system supports various document formats and automatically prepares files for AI processing with built-in validation and optimization."
-        },
-        {
-          image: "/document-assistant/demo3.jpg",
-          title: "AI Document Processing & Summary",
-          description: "Click 'Process Document' to activate advanced LLM analysis. The AI extracts key information, generates comprehensive summaries, and structures the content for intelligent querying - all powered by state-of-the-art language models."
-        },
-        {
-          image: "/document-assistant/demo4.jpg",
-          title: "Natural Language Queries",
-          description: "Ask questions about your document using natural language. The intelligent chatbot interface allows you to query specific information, request clarifications, or explore document contents through conversational AI."
-        },
-        {
-          image: "/document-assistant/demo5.jpg",
-          title: "Intelligent AI Responses",
-          description: "Receive accurate, context-aware answers powered by LLM technology. The AI provides detailed responses, cites relevant document sections, and offers insights that help you understand and utilize your documents more effectively."
-        }
-      ]
-    },
-    {
-      title: "Image Reader",
-      description:
-        "A Python-based tool for reading and processing images. The project includes scripts for image decoding and manipulation, making it useful for various image processing tasks.",
-      tags: ["Python", "Image Processing"],
-      image: "/placeholder.svg?height=400&width=600",
-      color: "teal",
-      link: "https://github.com/sri8harsha/Image-reader",
-      github: "https://github.com/sri8harsha/Image-reader",
     },
   ]
 
@@ -228,8 +137,6 @@ export default function Portfolio() {
     return () => window.removeEventListener('keydown', handleKeyPress)
   }, [galleryOpen, galleryImages.length, currentImageIndex])
 
-
-
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
   }
@@ -251,8 +158,6 @@ export default function Portfolio() {
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
   }
-
-
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 text-slate-800 overflow-x-hidden">
@@ -337,7 +242,7 @@ export default function Portfolio() {
               >
                 <Brain className="w-8 h-8 text-emerald-500" />
               </motion.div>
-              <p className="text-2xl md:text-3xl text-slate-700 font-light">AI Innovator & Creative Developer</p>
+              <p className="text-2xl md:text-3xl text-slate-700 font-light">AI Automation Engineer</p>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
@@ -346,7 +251,7 @@ export default function Portfolio() {
               </motion.div>
             </div>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              I build AI tools that businesses actually use. Specializing in practical automation, intelligent workflows, and user-friendly AI solutions. My projects don't just showcase technology - they solve real problems and deliver measurable value.
+              I build AI automations that actually work in production. Specialized in n8n workflows, API integrations, and turning manual business processes into intelligent systems. My focus: making AI accessible through practical tools that deliver measurable ROI.
             </p>
           </motion.div>
 
@@ -405,10 +310,10 @@ export default function Portfolio() {
           {/* Responsive grid that adapts to any number of projects */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-                              <Dialog key={index} open={modalOpen && selectedProject === index && !galleryOpen} onOpenChange={(open) => { 
-                  setModalOpen(open); 
-                  if (!open) setSelectedProject(null);
-                }}>
+              <Dialog key={index} open={modalOpen && selectedProject === index && !galleryOpen} onOpenChange={(open) => { 
+                setModalOpen(open); 
+                if (!open) setSelectedProject(null);
+              }}>
                 <DialogTrigger asChild>
                   <div onClick={() => { setSelectedProject(index); setModalOpen(true) }}>
                     <ProjectCard project={project} index={index} />
@@ -444,27 +349,6 @@ export default function Portfolio() {
                                   </div>
                                 ))}
                               </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    ) : project.demo ? (
-                      <div className="space-y-8">
-                        {project.demo.map((step, i) => (
-                          <div key={i} className="flex flex-col md:flex-row gap-6 items-start">
-                            <div className="flex-shrink-0">
-                              <div className="relative cursor-pointer" onClick={() => openGallery(project.demo.map(s => ({ src: s.image, title: s.title, description: s.description })), i)}>
-                                <img src={step.image} alt={step.title} className="w-48 h-32 object-cover rounded-xl border-2 border-emerald-100 shadow-md hover:shadow-lg transition-shadow duration-300" />
-                              </div>
-                            </div>
-                            <div className="flex-1 space-y-2">
-                              <div className="flex items-center gap-3">
-                                <span className="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-white font-semibold text-sm">
-                                  {i + 1}
-                                </span>
-                                <h4 className="text-lg font-semibold text-emerald-700">{step.title}</h4>
-                              </div>
-                              <p className="text-slate-600 leading-relaxed">{step.description}</p>
                             </div>
                           </div>
                         ))}
@@ -509,255 +393,66 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">
-              About Me
-            </h2>
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">About Me</h2>
+            <p className="text-xl text-slate-700 max-w-3xl mx-auto">
+              Started as a data analyst who got tired of watching teams do the same manual tasks every day. Now I specialize in building AI workflows that actually get deployed and used.<br/><br/>
+              My approach: understand the business problem first, then build the most elegant technical solution. I work primarily with n8n for workflow automation, integrating various AI APIs to create end-to-end systems that non-technical teams can operate.<br/><br/>
+              Most of my projects save companies 10-20 hours per week of manual work while improving output quality.
+            </p>
           </motion.div>
+        </div>
+      </section>
 
-          {/* Side by Side Layout */}
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Auto-scrolling Story Section */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 rounded-3xl blur-3xl"></div>
-              <div className="relative bg-gradient-to-br from-white/90 via-white/80 to-emerald-50/90 backdrop-blur-xl rounded-3xl border border-white/50 shadow-2xl overflow-hidden">
-                {/* Floating background elements */}
-                <div className="absolute top-6 right-6 w-24 h-24 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full blur-2xl"></div>
-                <div className="absolute bottom-6 left-6 w-16 h-16 bg-gradient-to-br from-teal-400/20 to-cyan-400/20 rounded-full blur-xl"></div>
-                
-                {/* Scrollable content container */}
-                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-[500px] overflow-y-auto group">
-                  <div className="p-6 space-y-8">
-                    {/* Main quote */}
-                    <div className="text-center mb-12">
-                      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent mb-4 leading-tight">
-                        "I turn AI complexity into human simplicity"
-                      </h3>
-                      <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mx-auto"></div>
-                    </div>
-
-                    {/* Flowing paragraphs */}
-                    <div className="space-y-8">
-                      <p className="text-lg text-slate-700 leading-relaxed text-center font-light">
-                        My path started with a revelation: the most sophisticated technology should feel effortless to those who need it most. Today, I transform cutting-edge artificial intelligence into tools that work exactly how people expect them to intuitively, reliably, and without friction.
-                      </p>
-                      
-                      <p className="text-lg text-slate-700 leading-relaxed text-center font-light">
-                        The moment that defines my work isn't when code compiles or models converge but when someone who's never touched AI accomplishes something extraordinary. When small businesses compete with giants, when creative ideas flow without technical barriers, when powerful capabilities become as accessible as turning on a light.
-                      </p>
-                      
-                      <p className="text-lg text-slate-700 leading-relaxed text-center font-light">
-                        I specialize in the alchemy of making complex things simple. At the intersection of machine intelligence and human experience, I craft solutions that don't just work but feel inevitable. Each system I build bridges the gap between what's technically possible and what's practically useful.
-                      </p>
-
-                      {/* Vision statement */}
-                      <div className="text-center mt-12 mb-8">
-                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full px-6 py-3 mb-6 shadow-lg">
-                          <Star className="w-4 h-4 text-white" />
-                          <span className="text-white font-semibold">My Vision</span>
-                        </div>
-                        <p className="text-xl font-bold bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 bg-clip-text text-transparent leading-tight mb-4">
-                          A world where AI enhances human capability without demanding technical expertise
-                        </p>
-                        <p className="text-slate-600 leading-relaxed font-light">
-                          Where innovation isn't limited by coding skills or corporate budgets, but only by imagination itself.
-                        </p>
-                      </div>
-
-                      {/* Additional content for scrolling */}
-                      <div className="space-y-8 mt-16">
-                        <div className="text-center">
-                          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full px-6 py-3 mb-6 shadow-lg">
-                            <Lightbulb className="w-4 h-4 text-white" />
-                            <span className="text-white font-semibold">My Approach</span>
-                          </div>
-                          <p className="text-lg text-slate-700 leading-relaxed text-center font-light">
-                            Every project begins with understanding the human need, not the technical possibility. I believe the best AI solutions are invisible to the end user and just work seamlessly, integrating into existing workflows and enhancing productivity without adding complexity.
-                          </p>
-                        </div>
-
-                        <div className="text-center">
-                          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full px-6 py-3 mb-6 shadow-lg">
-                            <Rocket className="w-4 h-4 text-white" />
-                            <span className="text-white font-semibold">Impact Focus</span>
-                          </div>
-                          <p className="text-lg text-slate-700 leading-relaxed text-center font-light">
-                            From automating product photography for e-commerce stores to creating intelligent document assistants that understand context, my work bridges the gap between cutting-edge AI capabilities and real-world business needs. Each solution is designed to empower users, not overwhelm them.
-                          </p>
-                        </div>
-
-                        {/* Extra spacing */}
-                        <div className="h-32"></div>
-                      </div>
-                    </div>
-                  </div>
-                  
-
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Enhanced Expertise Section */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl blur-3xl"></div>
-              <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-[500px] overflow-y-auto">
-                <div className="mb-6">
-                  <h4 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">Core Expertise</h4>
-                  <p className="text-slate-600 text-sm">Technologies & Skills That Drive Innovation</p>
-                </div>
-                
-                                 <div className="space-y-4">
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-emerald-50 rounded-xl border border-emerald-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-emerald-100 rounded-lg">
-                       <Brain className="w-5 h-5 text-emerald-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">Language Models & Chat</h5>
-                       <p className="text-slate-600 text-xs">Claude, GPT-4, Grok, Groq, DeepSeek, Chatterbox</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-purple-50 rounded-xl border border-purple-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-purple-100 rounded-lg">
-                       <Sparkles className="w-5 h-5 text-purple-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">Image Generation & AI Art</h5>
-                       <p className="text-slate-600 text-xs">Midjourney, DALL-E, Diffusion Models, ComfyUI, DreamBooth</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-pink-50 rounded-xl border border-pink-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-pink-100 rounded-lg">
-                       <Star className="w-5 h-5 text-pink-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">Voice & Audio AI</h5>
-                       <p className="text-slate-600 text-xs">ElevenLabs, Wav2Lip, Voice Cloning, Audio Synthesis</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-orange-50 rounded-xl border border-orange-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-orange-100 rounded-lg">
-                       <Rocket className="w-5 h-5 text-orange-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">No-Code Automation</h5>
-                       <p className="text-slate-600 text-xs">n8n, Zapier, Make, Pabbly Connect, Integromat</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-blue-50 rounded-xl border border-blue-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-blue-100 rounded-lg">
-                       <Lightbulb className="w-5 h-5 text-blue-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">No-Code App Development</h5>
-                       <p className="text-slate-600 text-xs">Bubble.io, FlutterFlow, Webflow, Adalo, Glide</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-teal-50 rounded-xl border border-teal-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-teal-100 rounded-lg">
-                       <Brain className="w-5 h-5 text-teal-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">API Integration & Services</h5>
-                       <p className="text-slate-600 text-xs">OpenAI APIs, Stripe, Webhooks, REST, GraphQL</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-amber-50 rounded-xl border border-amber-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-amber-100 rounded-lg">
-                       <Lightbulb className="w-5 h-5 text-amber-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">Document & Data Processing</h5>
-                       <p className="text-slate-600 text-xs">PDF analysis, OCR, Text extraction, Data parsing</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-indigo-50 rounded-xl border border-indigo-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-indigo-100 rounded-lg">
-                       <Rocket className="w-5 h-5 text-indigo-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">E-commerce & Marketing</h5>
-                       <p className="text-slate-600 text-xs">Product photography, Copywriting, Brand assets</p>
-                     </div>
-                   </motion.div>
-
-                   <motion.div
-                     className="flex items-center gap-3 p-3 bg-cyan-50 rounded-xl border border-cyan-100/50"
-                     whileHover={{ x: 8, scale: 1.02 }}
-                     transition={{ duration: 0.3 }}
-                   >
-                     <div className="p-2 bg-cyan-100 rounded-lg">
-                       <Star className="w-5 h-5 text-cyan-600" />
-                     </div>
-                     <div>
-                       <h5 className="font-semibold text-slate-800 text-sm">Workflow Optimization</h5>
-                       <p className="text-slate-600 text-xs">Process automation, Business intelligence, Analytics</p>
-                     </div>
-                   </motion.div>
-                 </div>
-
-                {/* Vision highlight at bottom */}
-                <div className="mt-6 p-4 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200/50">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Star className="w-4 h-4 text-amber-500" />
-                    <span className="text-amber-700 font-semibold text-sm">Mission</span>
-                  </div>
-                  <p className="text-slate-600 text-xs leading-relaxed">
-                    Making powerful AI accessible to everyone, regardless of technical background
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+      {/* Skills Section */}
+      <section id="skills" className="py-20 px-6 relative">
+        <div className="max-w-5xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Skills</h2>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Workflow Automation</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>n8n (Advanced) - 15+ production workflows</li>
+                <li>Zapier, Make.com - Enterprise integrations</li>
+              </ul>
+              <h3 className="text-2xl font-semibold mt-8 mb-4">API Design & Integration</h3>
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">AI Integration</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>OpenAI APIs (GPT-4, DALL-E, Whisper)</li>
+                <li>Claude API, Groq API</li>
+                <li>Prompt engineering & optimization</li>
+              </ul>
+              <h3 className="text-2xl font-semibold mt-8 mb-4">Development Stack</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Python (automation scripts, API backends)</li>
+                <li>JavaScript/Node.js (custom n8n nodes)</li>
+                <li>Google Apps Script (Sheets/Drive automation)</li>
+              </ul>
+              <h3 className="text-2xl font-semibold mt-8 mb-4">Business Systems</h3>
+              <ul className="list-disc list-inside text-lg text-slate-700">
+                <li>Google Workspace automation</li>
+                <li>CRM integrations (HubSpot, Salesforce)</li>
+                <li>Database design & management</li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Results/Metrics Section */}
+      <section id="results" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="mb-16">
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Results & Metrics</h2>
+            <ul className="list-disc list-inside text-xl text-slate-700 mx-auto max-w-2xl">
+              <li>Automated 200+ hours of monthly manual work across 5 companies</li>
+              <li>Reduced average task completion time by 75%</li>
+              <li>Deployed 15+ AI workflows currently running in production</li>
+            </ul>
+          </motion.div>
         </div>
       </section>
 
@@ -784,6 +479,9 @@ export default function Portfolio() {
                   </a>
                 </div>
                 <p className="text-sm text-slate-600 text-center mt-2">Email for direct communication</p>
+                <div className="mt-4">
+                  <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-semibold shadow hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">Book a Consultation</a>
+                </div>
               </div>
               
               <div className="p-6 bg-white/60 rounded-2xl border border-blue-200">
