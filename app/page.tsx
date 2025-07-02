@@ -464,62 +464,50 @@ export default function Portfolio() {
                       <DialogTitle className="text-3xl font-bold mb-2 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                         {project.title}
                       </DialogTitle>
-                      <DialogDescription className="text-lg text-slate-700 mb-4">
+                      {project.subtitle && (
+                        <div className="text-lg text-emerald-700 font-semibold mb-2">{project.subtitle}</div>
+                      )}
+                      <DialogDescription className="text-base text-slate-700 mb-4">
                         {project.description}
                       </DialogDescription>
                     </DialogHeader>
-                    {(project.title === "Multi-Channel Marketing Content Generator" || project.title === "Enterprise Document Intelligence System") && project.showcase && (
-                      <div className="space-y-8 mt-8">
-                        {project.showcase.map((item, i) => (
-                          <div key={i} className="flex flex-col md:flex-row gap-6 items-start">
-                            <div className="flex-shrink-0 border-2 border-emerald-200 rounded-xl p-2 bg-white shadow-md">
-                              <img src={item.image} alt={item.title} className="w-48 h-32 object-cover rounded-xl" />
-                            </div>
-                            <div className="flex-1 space-y-2">
-                              <div className="flex items-center gap-3">
-                                <span className="inline-flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full text-white font-semibold text-sm">{i + 1}</span>
-                                <h4 className="text-lg font-semibold text-emerald-700">{item.title}</h4>
-                              </div>
-                              <p className="text-slate-600 leading-relaxed">{item.description}</p>
-                            </div>
-                          </div>
-                        ))}
+                    {project.technical && (
+                      <div className="mb-4">
+                        <div className="font-semibold text-emerald-700 mb-1">Technical Implementation</div>
+                        <ul className="list-disc list-inside text-base text-slate-700 ml-4">
+                          {project.technical.map((item, idx) => <li key={idx}>{item}</li>)}
+                        </ul>
                       </div>
                     )}
-                    {!(project.title === "Multi-Channel Marketing Content Generator" || project.title === "Enterprise Document Intelligence System") && project.showcase && (
-                      <div className="space-y-12 mt-8">
-                        {project.showcase.map((item, i) => (
-                          <div key={i}>
-                            <div className="font-semibold text-emerald-700 mb-4 text-xl tracking-wide uppercase flex items-center gap-2">
-                              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400"></span> {item.label || item.title || `Step ${i+1}`}
-                            </div>
-                            <div className="flex flex-col md:flex-row gap-6 items-start">
-                              {item.input && (
-                                <div className="flex-shrink-0 border-2 border-emerald-200 rounded-xl p-2 bg-white shadow-md cursor-pointer" onClick={() => openGallery([{ src: item.input, title: `${item.label || 'Before'} Input` }], 0)}>
-                                  <img src={item.input} alt="input" className="w-32 h-32 object-contain rounded-lg hover:scale-105 transition-transform duration-300" />
-                                  <div className="text-xs text-center mt-1 text-slate-500 font-medium">Before</div>
-                                </div>
-                              )}
-                              <div className="flex flex-wrap gap-4">
-                                {item.outputs && item.outputs.map((out, j) => (
-                                  <div key={j} className="border-2 border-emerald-100 rounded-xl p-2 bg-white shadow-sm cursor-pointer" onClick={() => openGallery(item.outputs.map((output, idx) => ({ src: output, title: `${item.label || 'After'} Output ${idx + 1}` })), j)}>
-                                    <img src={out} alt={`output ${j+1}`} className="w-32 h-32 object-cover rounded-lg hover:scale-105 transition-transform duration-300" />
-                                    <div className="text-xs text-center mt-1 text-slate-500 font-medium">After {j+1}</div>
-                                  </div>
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                        ))}
+                    {project.business && (
+                      <div className="mb-4">
+                        <div className="font-semibold text-emerald-700 mb-1">{project.title === 'Multi-Channel Marketing Content Generator' ? 'Generated Assets (15+ pieces)' : project.title === 'Enterprise Document Intelligence System' ? 'Core Capabilities' : 'Business Impact'}</div>
+                        <ul className="list-disc list-inside text-base text-slate-700 ml-4">
+                          {project.business.map((item, idx) => <li key={idx}>{item}</li>)}
+                        </ul>
                       </div>
                     )}
-                    <div className="flex flex-wrap gap-2 mt-6">
-                      {project.stack.map((tag, tagIndex) => (
-                        <span key={tagIndex} className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                    {project.metrics && (
+                      <div className="mb-4">
+                        <div className="font-semibold text-emerald-700 mb-1">Business Metrics</div>
+                        <ul className="list-disc list-inside text-base text-slate-700 ml-4">
+                          {project.metrics.map((item, idx) => <li key={idx}>{item}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                    {project.stack && (
+                      <div className="mb-4">
+                        <div className="font-semibold text-emerald-700 mb-1">Technical Stack</div>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.stack.map((tag, tagIndex) => (
+                            <span key={tagIndex} className="flex items-center gap-1 px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium">
+                              <img src={`/badges/${tag.toLowerCase().replace(/ /g, '-')}.svg`} alt={tag} className="w-5 h-5" />
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                     <div className="flex gap-4 mt-8">
                       {project.link && project.link !== "#" && (
                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl font-semibold shadow hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
