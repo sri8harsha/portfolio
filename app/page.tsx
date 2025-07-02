@@ -127,7 +127,21 @@ export default function Portfolio() {
       github: "https://github.com/sri8harsha/Brandkit",
       caseStudy: "https://your-marketing-case-study-link.com",
       showcase: [
-        // ... add marketing asset screenshots ...
+        {
+          label: "UI Demo",
+          input: "/Brandkit/UI1.jpg",
+          outputs: ["/Brandkit/UI2.jpg", "/Brandkit/Details.jpg"]
+        },
+        {
+          label: "Social Media Asset",
+          input: "/Brandkit/SM.jpg",
+          outputs: ["/Brandkit/AC.jpg"]
+        },
+        {
+          label: "Email Campaign",
+          input: "/Brandkit/Email.jpg",
+          outputs: ["/Brandkit/brandkit_visual_8.png"]
+        }
       ]
     },
     {
@@ -163,7 +177,16 @@ export default function Portfolio() {
       github: "https://github.com/sri8harsha/Document-Assistant",
       caseStudy: "https://your-docs-case-study-link.com",
       showcase: [
-        // ... add document processing screenshots ...
+        {
+          label: "Interface",
+          input: "/document-assistant/demo1.jpg",
+          outputs: ["/document-assistant/demo2.jpg", "/document-assistant/demo3.jpg"]
+        },
+        {
+          label: "AI Processing",
+          input: "/document-assistant/demo4.jpg",
+          outputs: ["/document-assistant/demo5.jpg"]
+        }
       ]
     },
     {
@@ -192,7 +215,16 @@ export default function Portfolio() {
       github: "https://github.com/sri8harsha/Image-reader",
       caseStudy: "https://your-image-reader-case-study-link.com",
       showcase: [
-        // ... add image reader screenshots ...
+        {
+          label: "Image Decoding",
+          input: "/photoshoot/airpods_input.png",
+          outputs: ["/photoshoot/airpods_output1.jpg"]
+        },
+        {
+          label: "Batch Processing",
+          input: "/photoshoot/bracelet_input.png",
+          outputs: ["/photoshoot/bracelet_output1.jpg", "/photoshoot/bracelet_output2.jpg"]
+        }
       ]
     }
   ]
