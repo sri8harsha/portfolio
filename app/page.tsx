@@ -500,7 +500,7 @@ export default function Portfolio() {
                         <div className="font-semibold text-emerald-700 mb-1">Technical Stack</div>
                         <div className="flex flex-wrap gap-2 mt-2">
                           {project.stack.map((tag, tagIndex) => (
-                            <span key={tagIndex} className="px-3 py-1 ...">{tag}</span>
+                            <span key={tagIndex} className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium">{tag}</span>
                           ))}
                         </div>
                       </div>
@@ -691,33 +691,33 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Measurable Business Impact</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl shadow p-6">
+            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2 text-emerald-700">E-commerce Automation Client</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
+              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
                 <li>Reduced product photography costs by 85 percent ($24K annual savings)</li>
                 <li>Increased catalog update frequency from monthly to daily</li>
                 <li>Improved conversion rates by 23 percent with consistent product imagery</li>
               </ul>
             </div>
-            <div className="bg-white rounded-2xl shadow p-6">
+            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2 text-emerald-700">Marketing Agency Partnership</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
+              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
                 <li>Decreased campaign development time by 90 percent (5 days to 4 hours)</li>
                 <li>Enabled 3x client capacity without additional staff</li>
                 <li>Generated $180K additional annual revenue through efficiency gains</li>
               </ul>
             </div>
-            <div className="bg-white rounded-2xl shadow p-6">
+            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2 text-emerald-700">Legal Firm Document Processing</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
+              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
                 <li>Reduced contract review time by 70 percent (8 hours to 2.4 hours)</li>
                 <li>Improved accuracy in key clause identification by 95 percent</li>
                 <li>Processed 2,000 plus documents with zero security incidents</li>
               </ul>
             </div>
-            <div className="bg-white rounded-2xl shadow p-6">
+            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
               <h3 className="text-xl font-bold mb-2 text-emerald-700">Manufacturing Process Optimization</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700">
+              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
                 <li>Automated inventory reporting saving 15 hours per week</li>
                 <li>Eliminated manual data entry errors (100 percent to 0 percent)</li>
                 <li>Reduced supplier communication cycle from 3 days to 2 hours</li>
@@ -942,7 +942,7 @@ function ProjectCard({ project, index }: { project: any; index: number }) {
             {project.stack.map((tag, tagIndex) => (
               <span
                 key={tagIndex}
-                className="px-3 py-1 ...">{tag}</span>
+                className="px-3 py-1 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium">{tag}</span>
             ))}
           </div>
         </CardContent>
