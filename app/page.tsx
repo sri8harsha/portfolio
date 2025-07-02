@@ -16,6 +16,7 @@ import {
   Rocket,
   Star,
   X,
+  Calendar,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -730,15 +731,21 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-28 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Let's Build Something Amazing Together</h2>
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent leading-[1.15]">Let's Build Something Amazing Together</h2>
           <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
-          <div className="flex flex-col items-center gap-4 mb-8">
-            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">
-              <Mail className="w-5 h-5" /> Email: sri0harsha@gmail.com
+          <div className="flex flex-col items-center gap-4 mb-8 w-full">
+            <a href="mailto:sri0harsha@gmail.com" className="w-full max-w-md text-lg font-medium border-2 border-emerald-500 text-emerald-600 bg-transparent hover:bg-emerald-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2 justify-center">
+              <Mail className="w-5 h-5 transition-colors duration-300" /> Email: sri0harsha@gmail.com
             </a>
-            <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">Schedule Meeting</a>
-            <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">LinkedIn</a>
-            <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">GitHub</a>
+            <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="w-full max-w-md text-lg font-medium border-2 border-emerald-500 text-emerald-600 bg-transparent hover:bg-emerald-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2 justify-center">
+              <Calendar className="w-5 h-5 transition-colors duration-300" /> Schedule Meeting
+            </a>
+            <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="w-full max-w-md text-lg font-medium border-2 border-emerald-500 text-emerald-600 bg-transparent hover:bg-emerald-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2 justify-center">
+              <Linkedin className="w-5 h-5 transition-colors duration-300" /> LinkedIn
+            </a>
+            <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="w-full max-w-md text-lg font-medium border-2 border-emerald-500 text-emerald-600 bg-transparent hover:bg-emerald-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2 justify-center">
+              <Github className="w-5 h-5 transition-colors duration-300" /> GitHub
+            </a>
           </div>
         </div>
       </section>
