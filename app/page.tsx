@@ -733,10 +733,12 @@ export default function Portfolio() {
           <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Let's Build Something Amazing Together</h2>
           <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
           <div className="flex flex-col items-center gap-4 mb-8">
-            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-emerald-700 hover:text-white hover:bg-emerald-500 transition-all duration-300 px-4 py-2 rounded-xl shadow inline-flex items-center gap-2"><Mail className="w-5 h-5" /> Email: sri0harsha@gmail.com</a>
-            <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">📅 Schedule Consultation</a>
-            <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">💼 LinkedIn</a>
-            <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">🔗 GitHub</a>
+            <a href="mailto:sri0harsha@gmail.com" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">
+              <Mail className="w-5 h-5" /> Email: sri0harsha@gmail.com
+            </a>
+            <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">Schedule Meeting</a>
+            <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">LinkedIn</a>
+            <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-white bg-emerald-500 hover:bg-emerald-600 transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2">GitHub</a>
           </div>
         </div>
       </section>
