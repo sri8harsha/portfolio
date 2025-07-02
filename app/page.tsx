@@ -388,7 +388,7 @@ export default function Portfolio() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative px-6 bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 text-slate-800">
+      <section id="home" className="min-h-screen flex flex-col items-center justify-center relative px-6 bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 text-slate-800 pt-16">
         <div className="text-center z-10 max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
             SRI HARSHA KOLUKULURI
@@ -580,7 +580,7 @@ export default function Portfolio() {
                   <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Engineering AI Solutions That Actually Work in Production</h2>
                   <div className="mb-4">
                     <div className="text-lg text-slate-700 font-semibold mb-1">BACKGROUND & EXPERTISE</div>
-                    <p className="text-base text-slate-700">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical—it's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
+                    <p className="text-base text-slate-700">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical. It's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
                   </div>
                   <div className="mb-4">
                     <div className="text-lg text-slate-700 font-semibold mb-1">TECHNICAL PHILOSOPHY</div>
@@ -731,7 +731,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
+      <section id="contact" className="py-28 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Let's Build Something Amazing Together</h2>
           <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
