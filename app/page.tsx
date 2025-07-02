@@ -442,57 +442,67 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 px-6 relative bg-white/50">
+      {/* About & Skills Section (side-by-side, scrollable, old UI but new content) */}
+      <section id="about" className="py-20 px-6 relative">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Engineering AI Solutions That Actually Work in Production</h2>
-          <div className="text-lg text-slate-700 mb-6 font-semibold">BACKGROUND & EXPERTISE</div>
-          <p className="text-lg text-slate-700 mb-6">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical—it's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
-          <div className="text-lg text-slate-700 mb-6 font-semibold">TECHNICAL PHILOSOPHY</div>
-          <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
-            <li>Reliability First: Systems must work consistently, even with unexpected inputs</li>
-            <li>User-Centric Design: Non-technical teams should operate complex AI workflows effortlessly</li>
-            <li>Measurable Impact: Every implementation includes clear metrics and ROI tracking</li>
-          </ul>
-          <div className="text-lg text-slate-700 mb-6 font-semibold">CURRENT FOCUS AREAS</div>
-          <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
-            <li>Workflow Automation Architecture: Building enterprise-grade n8n workflows with proper error handling, monitoring, and scalability</li>
-            <li>AI API Integration & Optimization: Combining multiple AI models (GPT-4, Claude, specialized APIs) for optimal cost and performance</li>
-            <li>Business Process Intelligence: Analyzing manual workflows to identify automation opportunities with highest ROI</li>
-            <li>Production Deployment & Monitoring: Ensuring AI systems run reliably in production with proper logging and alerts</li>
-          </ul>
-          <div className="text-lg text-slate-700 mb-6 font-semibold">COLLABORATION APPROACH</div>
-          <p className="text-lg text-slate-700">I work closely with business stakeholders to understand real operational challenges, then design technical solutions that integrate naturally into existing workflows. My goal isn't just to build impressive technology—it's to create systems that teams actually use and depend on daily.</p>
-        </div>
-      </section>
-
-      {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 relative">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Technical Expertise & Production Experience</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">AI & Machine Learning Integration</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
-                <li>Large Language Models: OpenAI GPT-4, GPT-4V (Vision), GPT-3.5 Turbo, Anthropic Claude 3.5 Sonnet, Claude 3 Haiku, Groq LLaMA</li>
-                <li>Computer Vision & Generation: OpenAI DALL-E 3, Stable Diffusion XL, GPT-4 Vision, ComfyUI workflows</li>
-                <li>Vector Search & RAG: Pinecone, Chroma, FAISS, OpenAI text-embedding-ada-002, sentence-transformers</li>
-              </ul>
-              <h3 className="text-2xl font-semibold mb-4">Workflow Automation & Integration</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
-                <li>n8n (Advanced) <div className="w-full bg-emerald-100 rounded h-2 mt-1 mb-2"><div className="bg-emerald-500 h-2 rounded" style={{width: '80%'}}></div></div></li>
-                <li>Zapier, Make.com, Custom Webhooks, API Orchestration</li>
-                <li>RESTful API design, OAuth 2.0, 50+ third-party integrations</li>
-              </ul>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* About: Scrollable Card */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 rounded-3xl blur-3xl"></div>
+              <div className="relative bg-gradient-to-br from-white/90 via-white/80 to-emerald-50/90 backdrop-blur-xl rounded-3xl border border-white/50 shadow-2xl overflow-hidden h-[500px]">
+                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-full overflow-y-auto group">
+                  <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Engineering AI Solutions That Actually Work in Production</h2>
+                  <div className="text-lg text-slate-700 mb-4 font-semibold">BACKGROUND & EXPERTISE</div>
+                  <p className="text-lg text-slate-700 mb-4">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical—it's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
+                  <div className="text-lg text-slate-700 mb-4 font-semibold">TECHNICAL PHILOSOPHY</div>
+                  <ul className="list-disc list-inside text-lg text-slate-700 mb-4">
+                    <li>Reliability First: Systems must work consistently, even with unexpected inputs</li>
+                    <li>User-Centric Design: Non-technical teams should operate complex AI workflows effortlessly</li>
+                    <li>Measurable Impact: Every implementation includes clear metrics and ROI tracking</li>
+                  </ul>
+                  <div className="text-lg text-slate-700 mb-4 font-semibold">CURRENT FOCUS AREAS</div>
+                  <ul className="list-disc list-inside text-lg text-slate-700 mb-4">
+                    <li>Workflow Automation Architecture: Building enterprise-grade n8n workflows with proper error handling, monitoring, and scalability</li>
+                    <li>AI API Integration & Optimization: Combining multiple AI models (GPT-4, Claude, specialized APIs) for optimal cost and performance</li>
+                    <li>Business Process Intelligence: Analyzing manual workflows to identify automation opportunities with highest ROI</li>
+                    <li>Production Deployment & Monitoring: Ensuring AI systems run reliably in production with proper logging and alerts</li>
+                  </ul>
+                  <div className="text-lg text-slate-700 mb-4 font-semibold">COLLABORATION APPROACH</div>
+                  <p className="text-lg text-slate-700">I work closely with business stakeholders to understand real operational challenges, then design technical solutions that integrate naturally into existing workflows. My goal isn't just to build impressive technology—it's to create systems that teams actually use and depend on daily.</p>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">Development Stack</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 mb-6">
-                <li>Backend: Python (FastAPI, Flask, Django), Node.js (Express, NestJS), Serverless (Vercel, Netlify)</li>
-                <li>Frontend: React, Next.js, Gradio, Streamlit, Bubble.io, Webflow</li>
-                <li>Cloud & Databases: GCP, AWS, MongoDB, PostgreSQL, Redis, Pinecone</li>
-                <li>DevOps: Git, CI/CD, Docker, Monitoring, Performance Optimization</li>
-              </ul>
+            {/* Skills: Scrollable Card */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl blur-3xl"></div>
+              <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-[500px] overflow-y-auto">
+                <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Technical Expertise & Production Experience</h2>
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-2">AI & Machine Learning Integration</h3>
+                  <ul className="list-disc list-inside text-base text-slate-700 mb-4">
+                    <li>Large Language Models: OpenAI GPT-4, GPT-4V (Vision), GPT-3.5 Turbo, Anthropic Claude 3.5 Sonnet, Claude 3 Haiku, Groq LLaMA</li>
+                    <li>Computer Vision & Generation: OpenAI DALL-E 3, Stable Diffusion XL, GPT-4 Vision, ComfyUI workflows</li>
+                    <li>Vector Search & RAG: Pinecone, Chroma, FAISS, OpenAI text-embedding-ada-002, sentence-transformers</li>
+                  </ul>
+                </div>
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-2">Workflow Automation & Integration</h3>
+                  <ul className="list-disc list-inside text-base text-slate-700 mb-4">
+                    <li>n8n (Advanced) <div className="w-full bg-emerald-100 rounded h-2 mt-1 mb-2"><div className="bg-emerald-500 h-2 rounded" style={{width: '80%'}}></div></div></li>
+                    <li>Zapier, Make.com, Custom Webhooks, API Orchestration</li>
+                    <li>RESTful API design, OAuth 2.0, 50+ third-party integrations</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Development Stack</h3>
+                  <ul className="list-disc list-inside text-base text-slate-700 mb-4">
+                    <li>Backend: Python (FastAPI, Flask, Django), Node.js (Express, NestJS), Serverless (Vercel, Netlify)</li>
+                    <li>Frontend: React, Next.js, Gradio, Streamlit, Bubble.io, Webflow</li>
+                    <li>Cloud & Databases: GCP, AWS, MongoDB, PostgreSQL, Redis, Pinecone</li>
+                    <li>DevOps: Git, CI/CD, Docker, Monitoring, Performance Optimization</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
