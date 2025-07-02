@@ -741,16 +741,6 @@ export default function Portfolio() {
             <a href="https://linkedin.com/in/sri-harsha-3b0401170" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">💼 LinkedIn</a>
             <a href="https://github.com/sri8harsha" target="_blank" rel="noopener noreferrer" className="text-lg font-medium text-emerald-700 hover:text-emerald-900 transition-colors">🔗 GitHub</a>
           </div>
-          <div className="bg-white rounded-2xl shadow p-6 text-left mx-auto max-w-xl">
-            <div className="font-semibold text-lg mb-2">Consultation Approach:</div>
-            <ul className="list-disc list-inside text-lg text-slate-700 mb-2">
-              <li>Free 30-minute process analysis and automation assessment</li>
-              <li>Custom workflow demonstration with your actual data</li>
-              <li>Detailed implementation roadmap with timeline and ROI projections</li>
-              <li>Ongoing support and optimization for deployed systems</li>
-            </ul>
-            <div className="text-slate-700 mt-2">Available for: Process automation consulting, AI integration projects, workflow optimization, and technical advisory roles.</div>
-          </div>
         </div>
       </section>
 
