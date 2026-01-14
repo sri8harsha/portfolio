@@ -557,7 +557,7 @@ export default function Portfolio() {
               <p className="text-base text-slate-600 mt-1">Relevant Coursework: Predictive Analytics, Data Mining, Business Intelligence, Statistical Analysis, Database Management, Marketing Analytics</p>
             </div>
             <div>
-              <p className="text-lg font-semibold text-slate-800">B.Tech in Electronics & Communication Engineering, JNTU Hyderabad, 2020</p>
+              <p className="text-lg font-semibold text-slate-800">B.Tech in Computer Science, Gitam University Bangalore, 2016-2020</p>
             </div>
           </div>
           <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
