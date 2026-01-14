@@ -44,7 +44,7 @@ export default function Portfolio() {
     {
       title: "AI Product Photography Pipeline",
       subtitle: "Automated e-commerce photo generation using AI vision and workflow orchestration",
-      description: "Production-ready automation system that transforms basic product images into professional e-commerce photography with human models. Built as a scalable n8n workflow processing hundreds of images daily.",
+      description: "Research-informed automation system exploring how e-commerce businesses can leverage AI for product photography without technical expertise. This project provided insights into user adoption barriers, workflow design for non-technical users, and the economics of AI implementation in small businesses. Key learning: Understanding the gap between technical capability and business usability.",
       technical: [
         "n8n workflow orchestration with Google Sheets integration",
         "GPT-4 Vision for intelligent product analysis and categorization",
@@ -101,7 +101,7 @@ export default function Portfolio() {
     {
       title: "Multi-Channel Marketing Content Generator",
       subtitle: "End-to-end marketing automation generating 15+ assets from a single brief",
-      description: "Comprehensive AI-powered marketing system that transforms a simple product brief into complete campaign assets across all channels. Built for marketing agencies and small businesses needing rapid, professional content creation.",
+      description: "AI-powered marketing system exploring content generation workflows for small businesses. This project examined how non-technical marketing teams interact with AI tools and the challenges of maintaining brand consistency across automated content generation. Insights gained on balancing automation efficiency with creative control requirements.",
       technical: [
         "n8n workflow with modular content generation nodes",
         "Claude 3.5 Sonnet for copywriting and strategy development",
@@ -173,7 +173,7 @@ export default function Portfolio() {
     {
       title: "Enterprise Document Intelligence System",
       subtitle: "RAG-powered document analysis with intelligent Q and A and automated insights",
-      description: "Advanced document processing system combining OCR, vector search, and large language models to extract actionable insights from complex business documents. Designed for legal firms, consulting companies, and research organizations.",
+      description: "Document processing system investigating practical applications of AI in knowledge work. This project explored how businesses handle complex document analysis tasks and the challenges of implementing AI in high-stakes environments where accuracy is critical. Provided insights into user trust factors and verification workflows.",
       technical: [
         "Python backend with FastAPI for high-performance document processing",
         "Advanced OCR with table detection and layout preservation",
@@ -233,7 +233,7 @@ export default function Portfolio() {
     {
       title: "Image Reader Utility",
       subtitle: "Python-based tool for image decoding and manipulation",
-      description: "A robust Python utility for reading, decoding, and processing images. Useful for batch image analysis, format conversion, and integration into larger automation workflows.",
+      description: "Python utility developed to support image processing workflows. This project explored technical foundations of image handling and integration patterns for AI systems. Practical learning experience in building reusable components for larger automation systems.",
       technical: [
         "Python scripts for image decoding and manipulation",
         "Batch processing support for large image sets",
@@ -394,38 +394,18 @@ export default function Portfolio() {
           <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
             SRI HARSHA KOLUKULURI
           </h1>
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
-            AI Automation Engineer & Workflow Specialist
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">
+            Product Manager | Business Analytics Researcher | AI for Business Innovator
           </h2>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8 italic">
+            Exploring how non-technical entrepreneurs adopt AI through practical product development and business analytics
+          </p>
           <p className="text-xl text-slate-700 max-w-2xl mx-auto mb-6">
-            I architect intelligent automation systems that eliminate manual work and scale business operations. Specialized in automating workflows, AI API integrations, and production-ready solutions that deliver measurable ROI.
+            I'm a Product Manager with a passion for understanding how businesses adopt and implement AI technologies. With an MS in Business Analytics from University of New Haven and 4+ years of experience in AI product development and data analytics, I bridge the gap between technical AI capabilities and practical business applications.
           </p>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-8">
-            Currently building AI-powered automation for businesses across e-commerce, marketing, and document processing.
+            My work focuses on developing AI solutions that non-technical business users can actually operate, addressing a critical challenge: why do most AI implementations fail to gain adoption, and how can we design better solutions?
           </p>
-          {/* HERO METRICS BAR (replace metrics bar with interactive cards) */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
-              <span className="text-4xl mb-2">🚀</span>
-              <span className="text-2xl font-bold text-emerald-700">15+</span>
-              <span className="text-base text-slate-600 mt-1">Workflows Deployed</span>
-            </div>
-            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
-              <span className="text-4xl mb-2">⚡</span>
-              <span className="text-2xl font-bold text-emerald-700">200+</span>
-              <span className="text-base text-slate-600 mt-1">Hours Saved/Month</span>
-            </div>
-            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
-              <span className="text-4xl mb-2">📈</span>
-              <span className="text-2xl font-bold text-emerald-700">75%</span>
-              <span className="text-base text-slate-600 mt-1">Task Time Reduction</span>
-            </div>
-            <div className="flex flex-col items-center bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-1 hover:shadow-emerald-200">
-              <span className="text-4xl mb-2">💰</span>
-              <span className="text-2xl font-bold text-emerald-700">$50K+</span>
-              <span className="text-base text-slate-600 mt-1">Annual Savings</span>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -440,10 +420,10 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-              Featured Projects
+              Practical AI Applications
             </h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Innovative solutions that push the boundaries of what's possible
+              Real-world explorations in AI workflow automation and business implementation
             </p>
           </motion.div>
 
@@ -566,6 +546,36 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Academic & Research Background Section */}
+      <section id="academic" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent text-center">Academic & Research Background</h2>
+          <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-emerald-700">EDUCATION</h3>
+            <div className="mb-4">
+              <p className="text-lg font-semibold text-slate-800">MS in Business Analytics, University of New Haven, 2023</p>
+              <p className="text-base text-slate-600 mt-1">Relevant Coursework: Predictive Analytics, Data Mining, Business Intelligence, Statistical Analysis, Database Management, Marketing Analytics</p>
+            </div>
+            <div>
+              <p className="text-lg font-semibold text-slate-800">B.Tech in Electronics & Communication Engineering, JNTU Hyderabad, 2020</p>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl shadow-xl p-8 mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-emerald-700">RESEARCH INTERESTS</h3>
+            <ul className="list-disc list-inside text-base text-slate-700 space-y-2">
+              <li>AI adoption and implementation challenges in small businesses and startups. Why do some businesses successfully integrate AI while others struggle? What factors beyond technical capability determine success?</li>
+              <li>Technology acceptance and usability for non-technical entrepreneurs. How can we design AI tools that business users actually want to use and can use effectively?</li>
+              <li>Business analytics applications in startup validation and customer discovery. What role does data play in early-stage entrepreneurial decision making?</li>
+              <li>Product management strategies for AI-powered platforms. How do traditional product management frameworks need to adapt for AI products?</li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-2xl shadow-xl p-8">
+            <h3 className="text-2xl font-bold mb-4 text-emerald-700">PRACTITIONER RESEARCH</h3>
+            <p className="text-base text-slate-700">My work on VisualyAI serves as an ongoing case study in entrepreneurship and AI product development. This hands-on experience provides real-time insights into customer discovery, MVP development, market validation, and the practical challenges of building AI-powered platforms. The entrepreneurial journey complements academic frameworks with authentic experience navigating uncertainty, pivoting strategies, and learning from both successes and setbacks.</p>
+          </div>
+        </div>
+      </section>
+
       {/* About & Skills Section (side-by-side, scrollable, new content) */}
       <section id="about" className="py-20 px-6 relative">
         <div className="max-w-5xl mx-auto">
@@ -575,31 +585,36 @@ export default function Portfolio() {
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 rounded-3xl blur-3xl"></div>
               <div className="relative bg-gradient-to-br from-white/90 via-white/80 to-emerald-50/90 backdrop-blur-xl rounded-3xl border border-white/50 shadow-2xl overflow-hidden h-[500px]">
                 <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-full overflow-y-auto group">
-                  <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Engineering AI Solutions That Actually Work in Production</h2>
+                  <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent">Understanding AI Adoption in Business</h2>
                   <div className="mb-4">
                     <div className="text-lg text-slate-700 font-semibold mb-1">BACKGROUND & EXPERTISE</div>
-                    <p className="text-base text-slate-700">I'm a systems engineer who discovered that the gap between AI capabilities and business needs isn't technical. It's architectural. Most AI implementations fail because they're built as demos, not production systems.<br/><br/>My specialty is designing robust AI workflows that integrate seamlessly into existing business operations, handle edge cases gracefully, and scale with growing demands.</p>
+                    <p className="text-base text-slate-700">I'm a Product Manager with a strong foundation in business analytics and data-driven decision making. With an MS in Business Analytics from University of New Haven, I combine academic training with practical experience in AI product development at Phasorsoft and prior data analytics work at Cognizant.<br/><br/>My focus is understanding how businesses actually adopt and use AI technologies. Through my work and independent projects, I've gained insights into the challenges non-technical users face, the barriers to successful AI implementation, and the design patterns that lead to actual business adoption rather than abandoned pilot programs.</p>
                   </div>
                   <div className="mb-4">
-                    <div className="text-lg text-slate-700 font-semibold mb-1">TECHNICAL PHILOSOPHY</div>
-                    <ul className="list-disc list-inside text-base text-slate-700">
-                      <li>Reliability First: Systems must work consistently, even with unexpected inputs</li>
-                      <li>User-Centric Design: Non-technical teams should operate complex AI workflows effortlessly</li>
-                      <li>Measurable Impact: Every implementation includes clear metrics and ROI tracking</li>
+                    <div className="text-lg text-slate-700 font-semibold mb-1">RESEARCH INTERESTS</div>
+                    <p className="text-base text-slate-700 mb-2">I'm interested in exploring several interconnected areas where AI meets business practice:</p>
+                    <ul className="list-disc list-inside text-base text-slate-700 space-y-1">
+                      <li>How do non-technical entrepreneurs and small business owners make decisions about adopting AI technologies? What are the real barriers beyond cost and technical complexity?</li>
+                      <li>What design patterns make AI tools accessible to business users without technical backgrounds? How can we bridge the gap between AI capabilities and business needs?</li>
+                      <li>How do startups and small businesses validate AI product ideas and achieve product-market fit? What lessons from traditional entrepreneurship apply to AI-powered businesses?</li>
                     </ul>
+                    <p className="text-base text-slate-700 mt-2">These questions drive my work and inform my interest in contributing to academic research and teaching in entrepreneurship and business innovation.</p>
                   </div>
                   <div className="mb-4">
-                    <div className="text-lg text-slate-700 font-semibold mb-1">CURRENT FOCUS AREAS</div>
-                    <ul className="list-none text-base text-slate-700 space-y-2">
-                      <li><span className="mr-2">🔧</span><b>Workflow Automation Architecture</b><br/>Building enterprise-grade n8n workflows with proper error handling, monitoring, and scalability</li>
-                      <li><span className="mr-2">🤖</span><b>AI API Integration & Optimization</b><br/>Combining multiple AI models (GPT-4, Claude, specialized APIs) for optimal cost and performance</li>
-                      <li><span className="mr-2">📊</span><b>Business Process Intelligence</b><br/>Analyzing manual workflows to identify automation opportunities with highest ROI</li>
-                      <li><span className="mr-2">🚀</span><b>Production Deployment & Monitoring</b><br/>Ensuring AI systems run reliably in production with proper logging and alerts</li>
-                    </ul>
+                    <div className="text-lg text-slate-700 font-semibold mb-1">CURRENT WORK</div>
+                    <p className="text-base text-slate-700 mb-2">At Phasorsoft, I lead AI automation product initiatives, focusing on solutions that non-technical business teams can adopt and use effectively. This work involves understanding user needs, designing accessible interfaces, and ensuring AI tools integrate smoothly into existing business processes.</p>
+                    <p className="text-base text-slate-700">Independently, I'm developing VisualyAI, an AI workflow marketplace concept. This entrepreneurial project serves as a live case study in customer discovery, MVP development, and the practical challenges of building AI-powered platforms. The experience provides authentic insights into what entrepreneurs face when trying to leverage AI for business innovation.</p>
+                    <p className="text-base text-slate-700 mt-2">Both experiences inform my interest in how AI adoption actually happens in real-world business contexts, beyond the hype and theoretical frameworks.</p>
                   </div>
                   <div className="mb-2">
-                    <div className="text-lg text-slate-700 font-semibold mb-1">COLLABORATION APPROACH</div>
-                    <p className="text-base text-slate-700">I work closely with business stakeholders to understand real operational challenges, then design technical solutions that integrate naturally into existing workflows. My goal isn't just to build impressive technology. It's to create systems that teams actually use and depend on daily.</p>
+                    <div className="text-lg text-slate-700 font-semibold mb-1">AREAS OF CONTRIBUTION</div>
+                    <p className="text-base text-slate-700 mb-2">Through my combination of business analytics training, product management experience, and entrepreneurial work, I'm interested in contributing to academic programs in several ways:</p>
+                    <ul className="list-disc list-inside text-base text-slate-700 space-y-1">
+                      <li><b>Research Support:</b> I can assist with studies on AI adoption in small businesses, entrepreneurship challenges, or technology implementation in non-technical organizations. My practitioner perspective complements academic research methods.</li>
+                      <li><b>Student Mentorship:</b> I can help students understand how to apply AI in business contexts, navigate startup validation, or develop products for non-technical users. My ongoing entrepreneurial journey provides relatable, current examples.</li>
+                      <li><b>Program Coordination:</b> I'm interested in supporting entrepreneurship centers, innovation labs, or business analytics programs through event coordination, industry connections, or program development.</li>
+                      <li><b>Curriculum Development:</b> I can contribute to course development for AI in business, product management, or entrepreneurship courses by providing real-world case studies and practical frameworks.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -608,78 +623,74 @@ export default function Portfolio() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-emerald-500/10 to-teal-500/10 rounded-3xl blur-3xl"></div>
               <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-6 border border-emerald-100 shadow-xl h-[500px] overflow-y-auto">
-                <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Skills & Technical Expertise</h2>
+                <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Technical Background & Capabilities</h2>
                 <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-2">AI & Machine Learning Integration</h3>
-                  <div className="mb-2 font-semibold text-emerald-700">Large Language Models</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>OpenAI GPT-4, GPT-4V (Vision), GPT-3.5 Turbo</li>
-                    <li>Anthropic Claude 3.5 Sonnet, Claude 3 Haiku</li>
-                    <li>Groq LLaMA inference optimization</li>
-                    <li>Custom prompt engineering & fine-tuning</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">Computer Vision & Generation</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>OpenAI DALL-E 3, Stable Diffusion XL</li>
-                    <li>GPT-4 Vision for image analysis and OCR</li>
-                    <li>Custom ComfyUI workflows for specialized generation</li>
-                    <li>Image preprocessing and optimization pipelines</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">Vector Search & RAG</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>Pinecone, Chroma, FAISS vector databases</li>
-                    <li>OpenAI text-embedding-ada-002, sentence-transformers</li>
-                    <li>Advanced retrieval strategies and ranking</li>
-                    <li>Production RAG system optimization</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold mb-2 text-emerald-700">PRODUCT MANAGEMENT & BUSINESS ANALYTICS</h3>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Product Strategy & Development:</div>
+                    <p className="text-base text-slate-700 mb-2">AI product roadmapping, user research and discovery, go-to-market planning, feature prioritization, product-market fit validation</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Business Analytics:</div>
+                    <p className="text-base text-slate-700 mb-2">Python, SQL, R for data analysis, Tableau and Power BI for visualization, predictive modeling, statistical analysis, A/B testing and experimentation</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Data Management:</div>
+                    <p className="text-base text-slate-700 mb-2">Database design and querying (PostgreSQL, MongoDB), data pipeline development, business intelligence reporting, performance metrics and KPIs</p>
+                  </div>
                 </div>
                 <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-2">Workflow Automation & Integration</h3>
-                  <div className="mb-2 font-semibold text-emerald-700">Enterprise Automation Platforms</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>n8n (Advanced) - 15+ production workflows</li>
-                    <li>Zapier, Make.com - Complex multi-step automations</li>
-                    <li>Custom webhook design and API orchestration</li>
-                    <li>Error handling, retry logic, and monitoring</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">API Development & Integration</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>RESTful API design and documentation</li>
-                    <li>Webhook architecture and event-driven systems</li>
-                    <li>OAuth 2.0, API key management, rate limiting</li>
-                    <li>Third-party service integration (50+ APIs)</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">Cloud & Database Systems</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>Google Cloud Platform, AWS services</li>
-                    <li>MongoDB, PostgreSQL, Redis caching</li>
-                    <li>Vector databases for AI applications</li>
-                    <li>Automated backup and disaster recovery</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold mb-2 text-emerald-700">AI INTEGRATION & IMPLEMENTATION</h3>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">AI Platform Experience:</div>
+                    <p className="text-base text-slate-700 mb-2">OpenAI APIs (GPT-4, DALL-E), Anthropic Claude, integration of large language models into business applications, prompt engineering for business use cases</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Workflow Automation:</div>
+                    <p className="text-base text-slate-700 mb-2">n8n workflow design, API orchestration, business process automation, integration of multiple AI services for complete business solutions</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Product Development:</div>
+                    <p className="text-base text-slate-700 mb-2">Understanding of full-stack development environments, API integration patterns, user interface design principles, system architecture for AI applications</p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <h3 className="text-xl font-semibold mb-2 text-emerald-700">TECHNICAL PROFICIENCIES</h3>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Programming & Scripting:</div>
+                    <p className="text-base text-slate-700 mb-2">Python (FastAPI, data analysis libraries), JavaScript/Node.js, SQL for database queries, basic understanding of React and Next.js for product collaboration</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Development Tools:</div>
+                    <p className="text-base text-slate-700 mb-2">Git version control, Google Cloud Platform, AWS basics, Docker containerization concepts, RESTful API integration</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">AI Tools & Platforms:</div>
+                    <p className="text-base text-slate-700 mb-2">Experience implementing OpenAI GPT-4 and Vision models, Claude API, vector databases (Pinecone, Chroma), RAG system design, ComfyUI for image generation workflows</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Automation & Integration:</div>
+                    <p className="text-base text-slate-700 mb-2">n8n advanced workflows, Zapier and Make.com, webhook design, OAuth 2.0 implementation, third-party API integration and management</p>
+                  </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Development Stack</h3>
-                  <div className="mb-2 font-semibold text-emerald-700">Backend Development</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>Python (FastAPI, Flask, Django)</li>
-                    <li>Node.js (Express, NestJS)</li>
-                    <li>Serverless functions (Vercel, Netlify)</li>
-                    <li>Docker containerization and deployment</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">Frontend & Interfaces</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>React, Next.js for custom dashboards</li>
-                    <li>Gradio, Streamlit for rapid AI prototyping</li>
-                    <li>No-code platforms (Bubble.io, Webflow)</li>
-                    <li>Responsive design and mobile optimization</li>
-                  </ul>
-                  <div className="mb-2 font-semibold text-emerald-700">Development Operations</div>
-                  <ul className="list-disc list-inside text-base text-slate-700 mb-2">
-                    <li>Git version control and collaboration</li>
-                    <li>CI/CD pipelines for automated testing</li>
-                    <li>Production monitoring and alerting</li>
-                    <li>Performance optimization and scaling</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold mb-2 text-emerald-700">SOFT SKILLS & LEADERSHIP</h3>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Cross-functional Collaboration:</div>
+                    <p className="text-base text-slate-700 mb-2">Working with engineering, design, and business teams to deliver AI products, translating between technical and business stakeholders</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">User-Centric Design:</div>
+                    <p className="text-base text-slate-700 mb-2">Conducting user research, understanding adoption barriers, designing for non-technical users, prioritizing accessibility and usability</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Strategic Thinking:</div>
+                    <p className="text-base text-slate-700 mb-2">Market analysis, competitive research, business case development, ROI calculation, pricing strategy for AI products</p>
+                  </div>
+                  <div className="mb-3">
+                    <div className="mb-2 font-semibold text-slate-800">Communication:</div>
+                    <p className="text-base text-slate-700 mb-2">Technical documentation, stakeholder presentations, teaching complex concepts to non-technical audiences, mentoring junior team members</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -687,42 +698,22 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Results/Metrics Section */}
-      <section id="results" className="py-20 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Measurable Business Impact</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
-              <h3 className="text-xl font-bold mb-2 text-emerald-700">E-commerce Automation Client</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
-                <li>Reduced product photography costs by 85 percent ($24K annual savings)</li>
-                <li>Increased catalog update frequency from monthly to daily</li>
-                <li>Improved conversion rates by 23 percent with consistent product imagery</li>
-              </ul>
+      {/* Professional Experience Section */}
+      <section id="results" className="py-20 px-6 relative bg-white/50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent text-center">Professional Experience Highlights</h2>
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold mb-3 text-emerald-700">PRODUCT MANAGEMENT AT PHASORSOFT</h3>
+              <p className="text-base text-slate-700">Leading AI automation product development with emphasis on user adoption and business scalability. Managing cross-functional teams to deliver AI solutions that integrate into business operations. Conducting user research to understand how non-technical teams interact with AI tools and what drives successful implementation.</p>
             </div>
-            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
-              <h3 className="text-xl font-bold mb-2 text-emerald-700">Marketing Agency Partnership</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
-                <li>Decreased campaign development time by 90 percent (5 days to 4 hours)</li>
-                <li>Enabled 3x client capacity without additional staff</li>
-                <li>Generated $180K additional annual revenue through efficiency gains</li>
-              </ul>
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold mb-3 text-emerald-700">DATA ANALYTICS AT COGNIZANT</h3>
+              <p className="text-base text-slate-700">Performed business analytics using Python, SQL, Tableau, and Power BI for data-driven decision making. Developed predictive models and interactive dashboards. Mentored junior analysts on analytical methods and data presentation best practices. Gained foundation in translating data insights into business recommendations.</p>
             </div>
-            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
-              <h3 className="text-xl font-bold mb-2 text-emerald-700">Legal Firm Document Processing</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
-                <li>Reduced contract review time by 70 percent (8 hours to 2.4 hours)</li>
-                <li>Improved accuracy in key clause identification by 95 percent</li>
-                <li>Processed 2,000 plus documents with zero security incidents</li>
-              </ul>
-            </div>
-            <div className="bg-white rounded-2xl shadow p-6 text-left flex flex-col justify-between h-full">
-              <h3 className="text-xl font-bold mb-2 text-emerald-700">Manufacturing Process Optimization</h3>
-              <ul className="list-disc list-inside text-lg text-slate-700 pl-4 space-y-2">
-                <li>Automated inventory reporting saving 15 hours per week</li>
-                <li>Eliminated manual data entry errors (100 percent to 0 percent)</li>
-                <li>Reduced supplier communication cycle from 3 days to 2 hours</li>
-              </ul>
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold mb-3 text-emerald-700">ENTREPRENEURIAL EXPERIENCE</h3>
+              <p className="text-base text-slate-700">Developing VisualyAI marketplace concept through customer discovery and lean startup methodologies. Experiencing firsthand the challenges entrepreneurs face with AI adoption, product validation, and go-to-market strategy. Building practical understanding of what it takes to bring an AI product from concept to market.</p>
             </div>
           </div>
         </div>
@@ -731,8 +722,22 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-28 px-6 relative bg-gradient-to-br from-emerald-50 to-teal-50">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent leading-[1.15]">Let's Build Something Amazing Together</h2>
-          <p className="text-xl text-slate-700 mb-6">Ready to transform your manual processes into intelligent automation?</p>
+          <h2 className="text-5xl font-bold mb-8 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent leading-[1.15]">Let's Connect</h2>
+          <p className="text-xl text-slate-700 mb-6">I'm interested in exploring opportunities to contribute to academic programs in entrepreneurship, business analytics, or AI for business. If you're working on research in AI adoption, technology entrepreneurship, or business innovation, I'd welcome the chance to connect and discuss potential collaboration.</p>
+          <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 text-left max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4 text-emerald-700">OPEN TO:</h3>
+            <ul className="list-disc list-inside text-base text-slate-700 space-y-2 mb-6">
+              <li>Research collaboration opportunities in AI adoption or entrepreneurship studies</li>
+              <li>Part-time positions supporting academic programs in business or innovation</li>
+              <li>Guest speaking or workshop facilitation on AI entrepreneurship topics</li>
+              <li>Student mentorship in product management, business analytics, or startup development</li>
+            </ul>
+            <div className="border-t border-emerald-100 pt-6">
+              <p className="text-lg font-semibold text-slate-800 mb-2">CONTACT:</p>
+              <p className="text-base text-slate-700">Email: sri0harsha@gmail.com</p>
+              <p className="text-base text-slate-600 mt-1">University of New Haven Business Analytics Graduate, 2023</p>
+            </div>
+          </div>
           <div className="flex flex-col items-center gap-4 mb-8 w-full">
             <a href="mailto:sri0harsha@gmail.com" className="w-full max-w-md text-lg font-medium border-2 border-emerald-500 text-emerald-600 bg-transparent hover:bg-emerald-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl shadow inline-flex items-center gap-2 justify-center">
               <Mail className="w-5 h-5 transition-colors duration-300" /> Email: sri0harsha@gmail.com
@@ -782,7 +787,7 @@ export default function Portfolio() {
                 <Github className="w-6 h-6 text-slate-600" />
               </motion.a>
             </div>
-            <p className="text-slate-500">© 2024 Sriharsha Kolukuluri. Crafted with passion and innovation.</p>
+            <p className="text-slate-500">© 2025 Sri Harsha Kolukuluri. Product Manager & Business Analytics Researcher.</p>
           </motion.div>
         </div>
       </footer>
