@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -17,23 +16,31 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Script id="siteconcierge-widget" strategy="afterInteractive">
-          {`
-            (function() {
-              var script = document.createElement('script');
-              script.src = 'https://cidnxkkrlobjfmprbnmp.supabase.co/storage/v1/object/public/widget/siteconcierge-widget.js';
-              script.async = true;
-              script.onload = function() {
-                SiteConcierge.init({
-                  assistantId: 'f295006c-c1d3-44a1-abd9-c7612f9074e0',
-                  supabaseUrl: 'https://cidnxkkrlobjfmprbnmp.supabase.co',
-                  supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNpZG54a2tybG9iamZtcHJibm1wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzODc5MDcsImV4cCI6MjA5Mzk2MzkwN30.OiWZcuymRTLdGgmAVs6zm89npLypXfZE886oiIHo4OI'
-                });
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.SiteConciergeConfig = {
+                assistantId: '07126998-31c8-494c-ac28-96741e60d8d6',
+                supabaseUrl: 'https://cidnxkkrlobjfmprbnmp.supabase.co',
+                supabaseKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNpZG54a2tybG9iamZtcHJibm1wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgzODc5MDcsImV4cCI6MjA5Mzk2MzkwN30.OiWZcuymRTLdGgmAVs6zm89npLypXfZE886oiIHo4OI'
               };
-              document.body.appendChild(script);
-            })();
-          `}
-        </Script>
+            `,
+          }}
+        />
+        <iframe
+          src="https://cidnxkkrlobjfmprbnmp.supabase.co/storage/v1/object/public/widgets/siteconcierge-widget.html"
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            width: '60px',
+            height: '60px',
+            border: 'none',
+            zIndex: 999999,
+            borderRadius: '50%',
+          }}
+          id="siteconcierge-widget-frame"
+        />
       </body>
     </html>
   )
